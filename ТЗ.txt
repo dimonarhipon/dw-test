@@ -1,0 +1,29 @@
+Верстаем:
+1) валидно
+2) кроссбраузерно (ie11 и последние 2 версии всех основных браузеров)
+3) адаптивно — верстка для телефонов и планшетов по макету mobile.psd (от 320px до 1024px)
+4) с соблюдением pixel perfect (допустимое отклонение до 5px)
+5) используя БЭМ
+6) используя семантические теги html5
+
+Используем Foundation (+ Handlebars и SCSS):
+1) инфо о Handlebars https://habr.com/post/273581/
+2) инфо о Foundation https://foundation.zurb.com/sites/docs/index.html
+http://www.internet-technologies.ru/articles/podrobnoe-rukovodstvo-kak-pristupit-k-rabote-s-foundation.html
+3) Разворачиваем отсюда https://github.com/zurb/foundation-zurb-template
+Можно сразу из папки проекта командой "mkdir markup && git clone https://github.com/zurb/foundation-zurb-template markup && cd markup && rm -rf .git && cd ../ && git init && git add -A && git commit -m 'init project' && cd markup && npm i"
+
+Для слайдера и попапа используем jQuery-плагин. Валидацию делаем с помощью jQuery Validation. Форма и валидация должна работать и без js.
+
+Шрифты можем подключать из Google Fonts, либо конвертировать с помощью https://transfonter.org/
+Иконки можно генерировать с помощью https://icomoon.io
+
+Максимально и без потерь оптимизируем графику.
+При отключенной графике верстка не должна поехать.
+
+Вся страница должна пропорционально масштабироваться с использованием разных единиц измерения.
+
+Заливаем исходники вместе с билдом в гит.
+
+С гитом работаем через консоль.
+На выходе должно быть 2 ветки. В отдельной делаем валидацию формы на jQuery Validation. В master будет верстка без нее.
